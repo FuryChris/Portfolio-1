@@ -1,1 +1,3 @@
-Portfolio#1
+# Simple portfolio
+
+## Responsive, Sass
