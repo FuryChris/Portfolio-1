@@ -11,7 +11,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
   }
 
   // Rotating button into X with menu lines
@@ -39,6 +39,7 @@
 }
 
 // Menu overlay
+
 .menu {
   position: fixed;
   top: 0;
@@ -119,7 +120,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 500;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 
