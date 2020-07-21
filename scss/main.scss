@@ -1,6 +1,5 @@
-@import 'config';
-@import 'menu';
-
+@import "config";
+@import "menu";
 
 * {
   box-sizing: border-box;
@@ -70,7 +69,6 @@ main {
           @include easeOut;
         }
       }
-
     }
   }
 
@@ -83,13 +81,12 @@ main {
   }
 }
 
-
 .about-info {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    'bioimage bio bio'
-    'job1 job2 job3';
+    "bioimage bio bio"
+    "job1 job2 job3";
   // repeat 3 times 1fr;
   grid-template-columns: repeat(3, 1fr);
 
@@ -124,6 +121,52 @@ main {
   }
 }
 
+// Work/Projects
+
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 2px rgb(156, 143, 143) solid;
+    border-radius: 3px;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+// Button Styles
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  text-align: center;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: #fff;
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: #333;
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -132,4 +175,4 @@ main {
   height: 60px;
 }
 
-@import 'mobile';
+@import "mobile";
