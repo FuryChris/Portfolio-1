@@ -19,6 +19,7 @@
     transform: rotate(180deg);
 
     .btn-line {
+
       // Line 1 offset-rotate:
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
@@ -124,7 +125,7 @@
       transform: translate3d(0, 0, 0);
     }
 
-    &.current > a {
+    &.current>a {
       color: $secondary-color;
     }
   }
