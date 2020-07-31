@@ -52,7 +52,7 @@ header {
 }
 
 main {
-  padding: 4rem;
+  padding: 1rem 4rem;
   min-height: calc(100vh - 60px);
   // height: 100%;
 
@@ -92,12 +92,15 @@ main {
 
   .bio-image {
     grid-area: bioimage;
+    max-width: 250px;
+    max-height: 250px;
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
   }
 
   .bio {
+    text-align: justify;
     grid-area: bio;
     font-size: 1.5rem;
   }
@@ -115,6 +118,7 @@ main {
   }
 
   .job {
+    text-align: justify;
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
@@ -129,9 +133,12 @@ main {
   grid-template-columns: repeat(3, 1fr);
 
   img {
+    cursor: zoom-in;
     width: 100%;
     border: 2px rgb(156, 143, 143) solid;
     border-radius: 3px;
+    min-height: 180px;
+    max-height: 180px;
 
     &:hover {
       opacity: 0.5;
@@ -202,6 +209,10 @@ main {
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
+}
+
+.portrait {
+  opacity: 1;
 }
 
 @import "mobile";

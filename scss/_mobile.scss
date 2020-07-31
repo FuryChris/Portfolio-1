@@ -1,8 +1,24 @@
 // Widescreens
 
-@include mediaXl {
+@include mediaXL {
   .projects {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+@include mediaXXL {
+  .projects {
+    grid-template-columns: repeat(5, 1fr);
+
+  }
+}
+
+
+
+@include mediaXXXL {
+  .projects {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
@@ -85,5 +101,15 @@
 
   .projects {
     grid-template-columns: 1fr;
+
+    img {
+      min-height: 250px;
+      max-height: 250px;
+
+      a {
+        object-fit: contain;
+
+      }
+    }
   }
 }
