@@ -43,6 +43,7 @@ const descriptions = [
     'Gif searching app using GIPHY API with fetch method.',
     'Roguelike game based on React. In this project are used features like: ES6, Hooks, Objects, Classess, etc...',
     'Searching content using Youtube Data API ',
+    'Tic Tac Toe game - project build on ReactJS.',
 ]
 // Get the image and insert it inside the modal"alt" text as a caption
 
